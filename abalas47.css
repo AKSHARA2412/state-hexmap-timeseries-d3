@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin-top: 10px;
+}
+h3 {
+    margin-bottom: 20px;
+}
+#control-panel {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#control-panel label {
+    font-weight: bold;
+}
+#control-panel select,
+#control-panel input[type="range"],
+#control-panel button {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#control-panel button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+#control-panel button:hover {
+    background-color: #0056b3;
+}
+#hex-map-panel,
+#line-chart-panel {
+    display: inline-block;
+    width: 49%;
+    height: 500px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    overflow: hidden;
+}
+#hex-map-panel svg,
+#line-chart-panel svg {
+    width: 100%;
+    height: 100%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.state-circle {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+.year-line {
+    stroke: gray;
+    stroke-dasharray: 4;
+    stroke-width: 2;
+}
+@media screen and (max-width: 1000px) {
+    #hex-map-panel,
+    #line-chart-panel {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+h1, h2, h3 {
+    text-align: center;
+    margin: 0.5em 0;
+    color:green
+  }
+  
+  

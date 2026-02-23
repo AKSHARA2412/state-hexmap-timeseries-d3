@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework #4: D3 Transitions</title>
+    <link rel="stylesheet" href="abalas47.css" />
+</head>
+<body>
+    <h1>Homework #4: D3 Transitions</h1>
+    <h2>Akshara Balasubramanian</h2>
+    <h3>abalas47@asu.edu</h3>
+    <div id="control-panel">
+        <div class="control-group">
+            <label for="attribute-select">Attribute:</label>
+              <select id="attribute-select">
+                <option value="Revenue">Revenue</option>
+                <option value="Expenses">Expenses</option>
+                <option value="General Revenue">General Revenue</option>
+                <option value="General Expenditure">General Expenditure</option>
+                <option value="Capital Outlay">Capital Outlay</option>
+              </select>
+        </div>
+        <div class="control-group">
+            <label for="scale-toggle">Attribute Scale:</label>
+            <input type="checkbox" id="scale-toggle" />
+            <span id="scale-label">Current Year</span>
+        </div>
+        <div class="control-group">
+            <label for="year-slider">Year:</label>
+            <input type="range" id="year-slider" min="1992" max="2019" value="1992" />
+            <span id="year-label">1992</span>
+        </div>
+        <div class="control-group">
+            <button id="play-button">Play</button>
+        </div>
+    </div>
+    <div id="hex-map-panel"></div>
+    <div id="line-chart-panel"></div>
+    <div class="clearfix"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+    <script src="d3-lasso.js"></script>
+    <script src="abalas47.js"></script>
+</body>
+</html>
